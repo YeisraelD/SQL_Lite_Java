@@ -64,6 +64,28 @@ public class ExecutionEngine {
     }
 
     public void executeSelect(SelectStatement stmt) throws Exception {
-        // Will be implemented in Commit 9
+        TableManager tm = tables.get(stmt.tableName);
+        if (tm == null) {
+            throw new Exception("Table not found: " + stmt.tableName);
+        }
+        Table table = tm.getTable();
+        List<Column> columns = table.getColumns();
+
+        // Print Header
+        StringBuilder header = new StringBuilder();
+        for (Column c : columns) {
+            header.append(c.getName()).append("\t|\t");
+        }
+        System.out.println(header.toString());
+        System.out.println("-".repeat(header.length()));
+
+        // Print Rows
+        for (Row row : table.getRows()) {
+            StringBuilder rowStr = new StringBuilder();
+            for (Column c : columns) {
+                rowStr.append(row.getValue(c.getName())).append("\t|\t");
+            }
+            System.out.println(rowStr.toString());
+        }
     }
 }
