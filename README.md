@@ -16,3 +16,5 @@ A tiny, custom relational database engine built in Java.
 
 ## How to Run
 ........
+u can test with such simple queries
+<img width="1293" height="544" alt="image" src="https://github.com/user-attachments/assets/f8d8da96-83b1-469d-a412-af7d0e8a7a46" />
