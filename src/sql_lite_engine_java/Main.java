@@ -1,21 +1,21 @@
-package neondb;
+package sql_lite_engine_java;
 
-import neondb.parser.Lexer;
-import neondb.parser.Parser;
-import neondb.parser.Statement;
+import sql_lite_engine_java.parser.Lexer;
+import sql_lite_engine_java.parser.Parser;
+import sql_lite_engine_java.parser.Statement;
 
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("NeonDB Engine Starting...");
+        System.out.println("sql_lite_engine_java Engine Starting...");
         System.out.println("Type '.exit' to quit.");
 
         ExecutionEngine engine = new ExecutionEngine();
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
-            System.out.print("neondb > ");
+            System.out.print("sql_lite_engine_java > ");
             if (!scanner.hasNextLine()) break;
             
             String input = scanner.nextLine().trim();

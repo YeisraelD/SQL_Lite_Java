@@ -1,7 +1,7 @@
-package neondb.parser;
+package sql_lite_engine_java.parser;
 
-import neondb.storage.DataType;
-import neondb.storage.Column;
+import sql_lite_engine_java.storage.DataType;
+import sql_lite_engine_java.storage.Column;
 import java.util.ArrayList;
 import java.util.List;
 

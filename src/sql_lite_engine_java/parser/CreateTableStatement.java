@@ -1,5 +1,5 @@
-package neondb.parser;
-import neondb.storage.Column;
+package sql_lite_engine_java.parser;
+import sql_lite_engine_java.storage.Column;
 import java.util.List;
 
 public class CreateTableStatement implements Statement {

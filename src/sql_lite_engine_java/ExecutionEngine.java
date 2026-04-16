@@ -1,7 +1,7 @@
-package neondb;
+package sql_lite_engine_java;
 
-import neondb.parser.*;
-import neondb.storage.*;
+import sql_lite_engine_java.parser.*;
+import sql_lite_engine_java.storage.*;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;

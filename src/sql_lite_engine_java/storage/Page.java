@@ -1,4 +1,4 @@
-package neondb.storage;
+package sql_lite_engine_java.storage;
 
 public class Page {
     public static final int PAGE_SIZE = 4096;

@@ -1,4 +1,4 @@
-package neondb.parser;
+package sql_lite_engine_java.parser;
 
 import java.util.ArrayList;
 import java.util.List;

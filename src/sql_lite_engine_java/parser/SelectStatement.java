@@ -1,4 +1,4 @@
-package neondb.parser;
+package sql_lite_engine_java.parser;
 
 public class SelectStatement implements Statement {
     public String tableName;
